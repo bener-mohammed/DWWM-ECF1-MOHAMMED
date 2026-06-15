@@ -1,26 +1,5 @@
-@use "./abstracts/variables" as *;
-
-body {
-  margin: 0;
-  background-color: $color-cream;
-  color: $color-anthracite;
-  font-family: $font-body;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-heading;
-  color: $color-bordeaux;
-}
-
-a {
-  color: inherit;
-}
-
-button {
-  font-family: $font-body;
-}
+@use "./abstracts/variables";
+@use "./base/base";
+@use "./layout/header";
+@use "./layout/hero";
+@use "./components/button";
