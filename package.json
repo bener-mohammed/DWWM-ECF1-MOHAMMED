@@ -1,0 +1,21 @@
+{
+  "name": "dwwm-ecf1-mohammed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass --watch src/scss:assets/css",
+  "build": "sass src/scss/main.scss assets/css/main.css --style=compressed",
+  "lint": "eslint src/js",
+  "format": "prettier --write ."
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^10.5.0",
+    "prettier": "^3.8.4",
+    "sass": "^1.101.0"
+  }
+}
