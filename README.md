@@ -1,6 +1,6 @@
 # Le Phosphore - ECF DWWM 2026
 
-This project is a responsive website for Le Phosphore witch is a performance hall
+This project is a responsive website for Le Phosphore, a live performance venue.
 
 # Technologies
 
@@ -16,6 +16,8 @@ This project is a responsive website for Le Phosphore witch is a performance hal
 - Home page
 - Programming page
 - Practical information page
+- contact page
+- room page
 
 # Features
 

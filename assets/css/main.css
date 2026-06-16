@@ -1,17 +1,46 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @use "./layout/header";
- *   | ^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   src\scss\main.scss 3:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use \"./layout/header\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\main.scss 3:1  root stylesheet";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f0e8;
+  color: #2a2d34;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Montagu Slab", Georgia, serif;
+}
+
+p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
