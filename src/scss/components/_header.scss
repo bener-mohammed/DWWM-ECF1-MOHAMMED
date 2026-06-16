@@ -1,14 +1,18 @@
 @use "../abstracts/variables" as *;
 
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   min-height: 76px;
   padding: 0 36px;
-  background-color: $color-anthracite;
+  background-color: rgba(42, 45, 52, 0.82);
+  backdrop-filter: blur(4px);
   color: $color-cream;
 
   &__logo-link {
@@ -106,6 +110,7 @@
   .header {
     min-height: 74px;
     padding: 0 18px;
+    background-color: rgba(42, 45, 52, 0.88);
 
     &__logo-icon {
       width: 46px;
