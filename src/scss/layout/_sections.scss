@@ -1,0 +1,149 @@
+@use "../abstracts/variables" as *;
+
+.info-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 66%;
+  min-height: 66px;
+  background-color: $color-cream;
+  color: $color-anthracite;
+  border-bottom: 1px solid rgba(212, 168, 67, 0.45);
+
+  &__item,
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 42px;
+    padding: 0 20px;
+    font-size: 0.74rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-right: 1px solid $color-anthracite;
+  }
+
+  &__socials {
+    gap: 18px;
+    border-right: 0;
+  }
+
+  &__icon,
+  &__social-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.booking {
+  width: 34%;
+  min-height: 66px;
+  margin-top: -66px;
+  margin-left: auto;
+  background-color: $color-gold;
+  color: $color-anthracite;
+
+  &__link {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 22px;
+    min-height: 66px;
+    padding: 0 34px;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+  }
+
+  &__title {
+    font-size: 1.45rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &__text {
+    margin-top: 5px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .info-bar {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    min-height: auto;
+
+    &__item,
+    &__socials {
+      min-height: 44px;
+      padding: 0 10px;
+      gap: 8px;
+      font-size: 0.58rem;
+    }
+
+    &__icon,
+    &__social-icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  .booking {
+    width: 100%;
+    margin-top: 0;
+
+    &__link {
+      min-height: 64px;
+      padding: 0 16px;
+      gap: 14px;
+    }
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      white-space: normal;
+    }
+
+    &__text {
+      font-size: 0.62rem;
+      white-space: normal;
+    }
+
+    &__arrow {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
