@@ -3,50 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Le Phosphore est une salle de spectacle dédiée aux concerts, au théâtre, à la danse et aux événements culturels."
     />
+
     <title>Le Phosphore - Salle de spectacle</title>
+
     <link rel="icon" type="image/png" href="assets/icons/logo.png" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,600;16..144,700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <a
         class="header__logo-link"
         href="index.html"
+        aria-label="Retour à l'accueil"
       >
         <img
-          class="header__logo"
+          class="header__logo-icon"
           src="assets/img/logo.png"
-          alt="Logo Le Phosphore"/>
+          alt=""
+          aria-hidden="true"
+        />
+
+        <span class="header__logo-text">
+          <span class="header__logo-name">Le Phosphore</span>
+          <span class="header__logo-subtitle">Salle de spectacle</span>
+        </span>
       </a>
+
       <nav
         class="header__nav"
         id="main-navigation"
+        aria-label="Navigation principale"
       >
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="index.html">Accueil</a>
           </li>
+
           <li class="header__item">
             <a class="header__link" href="programmation.html">À l'affiche</a>
           </li>
+
           <li class="header__item">
-            <a class="header__link" href="infos-pratiques.html">Infos pratiques</a>
+            <a class="header__link" href="infos-pratiques.html">
+              Infos pratiques
+            </a>
           </li>
+
           <li class="header__item">
-            <a class="header__link" href="room.html">La salle</a>
+            <a class="header__link" href="infos-pratiques.html#room">
+              La salle
+            </a>
           </li>
+
           <li class="header__item">
-            <a class="header__link" href="contact.html">Contact</a>
+            <a class="header__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +80,8 @@
         <img
           class="header__button-icon"
           src="assets/icons/Ticket.svg"
-          alt="Ticket"
+          alt=""
+          aria-hidden="true"
         />
       </a>
 
@@ -75,45 +100,48 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <!-- Les Rideaux version DESKTOP -->
         <img
           class="hero__curtain hero__curtain--left"
-          src="./assets/img/rideau-gauche.png"
-          alt=""
-          aria-hidden="true"
-        />
-        <img
-          class="hero__curtain hero__curtain--right"
-          src="./assets/img/rideau-droite.png"
+          src="assets/img/rideau-gauche.png"
           alt=""
           aria-hidden="true"
         />
 
-        <!-- Les rideaux version mobile -->
+        <img
+          class="hero__curtain hero__curtain--right"
+          src="assets/img/rideau-droite.png"
+          alt=""
+          aria-hidden="true"
+        />
+
         <img
           class="hero__curtain-mobile"
           src="assets/img/rideaux.png"
           alt=""
           aria-hidden="true"
         />
+
         <img
           class="hero__stage"
-          src="./assets/img/scene-principale.png"
+          src="assets/img/scene-principale.png"
           alt=""
           aria-hidden="true"
         />
 
         <div class="hero__content">
-          <img
-            class="hero__logo"
-            src="assets/icons/logo.png"
-            alt=""
-            aria-hidden="true"
-          />
-          <p class="hero__small">Le</p>
-          <h1 class="hero__title" id="hero-title">Phosphore</h1>
-          <p class="hero__subtitle">Salle de spectacle</p>
-          <p class="hero__text">Vibrez. Partagez. Émerveillez-vous.</p>
+          <div class="hero__title-box">
+            <img
+              class="hero__logo"
+              src="assets/icons/logo.png"
+              alt=""
+              aria-hidden="true"
+            />
+
+            <p class="hero__small">Le</p>
+            <h1 class="hero__title" id="hero-title">Phosphore</h1>
+            <p class="hero__subtitle">Salle de spectacle</p>
+            <p class="hero__text">Vibrez. Partagez. Émerveillez-vous.</p>
+          </div>
 
           <ul class="hero__categories" aria-label="Catégories de spectacles">
             <li class="hero__category">
@@ -125,6 +153,7 @@
               />
               <span>Concert live</span>
             </li>
+
             <li class="hero__category">
               <img
                 class="hero__category-icon"
@@ -134,19 +163,21 @@
               />
               <span>Théâtre humour</span>
             </li>
+
             <li class="hero__category">
               <img
                 class="hero__category-icon"
-                src="assets/icons/Dancing.png"
+                src="assets/icons/Dancing.svg"
                 alt=""
                 aria-hidden="true"
               />
               <span>Danse performances</span>
             </li>
+
             <li class="hero__category">
               <img
                 class="hero__category-icon"
-                src="assets/icons/Event.png"
+                src="assets/icons/event.svg"
                 alt=""
                 aria-hidden="true"
               />
@@ -182,7 +213,8 @@
             <img
               class="info-bar__social-icon"
               src="assets/icons/Facebook.svg"
-              alt="facebook"
+              alt=""
+              aria-hidden="true"
             />
           </a>
 
@@ -190,17 +222,18 @@
             <img
               class="info-bar__social-icon"
               src="assets/icons/Instagram.svg"
-              alt="instagram"
+              alt=""
+              aria-hidden="true"
             />
           </a>
         </div>
       </section>
 
       <section class="booking" aria-label="Réservation">
-        <a class="booking__link" href="./programmation.html">
+        <a class="booking__link" href="programmation.html">
           <img
             class="booking__icon"
-            src="./assets/icons/Tickets.svg"
+            src="assets/icons/Tickets.svg"
             alt=""
             aria-hidden="true"
           />
@@ -212,7 +245,7 @@
 
           <img
             class="booking__arrow"
-            src="./assets/icons/Arrow-Up.svg"
+            src="assets/icons/Arrow-Up.svg"
             alt=""
             aria-hidden="true"
           />
@@ -222,14 +255,14 @@
       <section class="shows" aria-labelledby="shows-title">
         <div class="shows__top">
           <h2 class="shows__title" id="shows-title">À l’affiche</h2>
-          <a class="shows__link" href="./programmation.html">Voir tout</a>
+          <a class="shows__link" href="programmation.html">Voir tout</a>
         </div>
 
         <div class="shows__list">
           <article class="show-card">
             <img
               class="show-card__image"
-              src="./assets/img/cyrano-de-bergerac.png"
+              src="assets/img/cyrano-de-bergerac.png"
               alt="Comédien en costume sur scène pour Cyrano de Bergerac"
             />
 
@@ -239,11 +272,11 @@
               <p class="show-card__type">Théâtre classique</p>
               <p class="show-card__places">Il reste 36 places</p>
 
-              <a class="show-card__button" href="./programmation.html">
+              <a class="show-card__button" href="programmation.html">
                 <span>Réserver</span>
                 <img
                   class="show-card__button-icon"
-                  src="./assets/icons/Ticket.svg"
+                  src="assets/icons/Ticket.svg"
                   alt=""
                   aria-hidden="true"
                 />
@@ -254,7 +287,7 @@
           <article class="show-card">
             <img
               class="show-card__image"
-              src="./assets/img/marina-music.png"
+              src="assets/img/marina-music.png"
               alt="Chanteuse électro-pop sur scène"
             />
 
@@ -264,11 +297,11 @@
               <p class="show-card__type">Electro Pop</p>
               <p class="show-card__sold-out">Complet</p>
 
-              <a class="show-card__button" href="./programmation.html">
+              <a class="show-card__button" href="programmation.html">
                 <span>Réserver</span>
                 <img
                   class="show-card__button-icon"
-                  src="./assets/icons/Ticket.svg"
+                  src="assets/icons/Ticket.svg"
                   alt=""
                   aria-hidden="true"
                 />
@@ -279,7 +312,7 @@
           <article class="show-card">
             <img
               class="show-card__image"
-              src="./assets/img/fadyla-camara.png"
+              src="assets/img/fadyla-camara.png"
               alt="Humoriste sur scène avec un micro"
             />
 
@@ -289,11 +322,11 @@
               <p class="show-card__type">Stand-up</p>
               <p class="show-card__places">Il reste 52 places</p>
 
-              <a class="show-card__button" href="./programmation.html">
+              <a class="show-card__button" href="programmation.html">
                 <span>Réserver</span>
                 <img
                   class="show-card__button-icon"
-                  src="./assets/icons/Ticket.svg"
+                  src="assets/icons/Ticket.svg"
                   alt=""
                   aria-hidden="true"
                 />
@@ -307,7 +340,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Mic.svg"
+            src="assets/icons/Mic.svg"
             alt=""
             aria-hidden="true"
           />
@@ -323,7 +356,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Tickets.svg"
+            src="assets/icons/Tickets.svg"
             alt=""
             aria-hidden="true"
           />
@@ -337,7 +370,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Dancing.png"
+            src="assets/icons/Dancing.png"
             alt=""
             aria-hidden="true"
           />
@@ -351,7 +384,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Event.png"
+            src="assets/icons/Event.png"
             alt=""
             aria-hidden="true"
           />
@@ -363,11 +396,14 @@
         </article>
       </section>
 
-      <section class="services services--bordeaux" aria-label="Services de la salle">
+      <section
+        class="services services--bordeaux"
+        aria-label="Services de la salle"
+      >
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Wheelchair.png"
+            src="assets/icons/Wheelchair.png"
             alt=""
             aria-hidden="true"
           />
@@ -381,7 +417,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Wine.png"
+            src="assets/icons/Wine.png"
             alt=""
             aria-hidden="true"
           />
@@ -395,7 +431,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Hanger.png"
+            src="assets/icons/Hanger.png"
             alt=""
             aria-hidden="true"
           />
@@ -411,7 +447,7 @@
         <article class="service-card">
           <img
             class="service-card__icon"
-            src="./assets/icons/Sofa.png"
+            src="assets/icons/Sofa.png"
             alt=""
             aria-hidden="true"
           />
@@ -430,7 +466,7 @@
       <div class="footer__brand">
         <img
           class="footer__logo"
-          src="./assets/img/logo.png"
+          src="assets/img/logo.png"
           alt="Logo Le Phosphore"
         />
 
@@ -442,21 +478,27 @@
 
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="./index.html">Accueil</a>
+            <a class="footer__link" href="index.html">Accueil</a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./programmation.html">À l'affiche</a>
+            <a class="footer__link" href="programmation.html">À l'affiche</a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./infos-pratiques.html">
+            <a class="footer__link" href="infos-pratiques.html">
               Infos pratiques
             </a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./room.html">La salle</a>
+            <a class="footer__link" href="infos-pratiques.html#room">
+              La salle
+            </a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./contact.html">Contact</a>
+            <a class="footer__link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -466,21 +508,25 @@
 
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="./infos-pratiques.html">Accès</a>
+            <a class="footer__link" href="infos-pratiques.html">Accès</a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./infos-pratiques.html">Tarifs</a>
+            <a class="footer__link" href="infos-pratiques.html">Tarifs</a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./infos-pratiques.html">Services</a>
+            <a class="footer__link" href="infos-pratiques.html">Services</a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./infos-pratiques.html">
+            <a class="footer__link" href="infos-pratiques.html">
               Accessibilité PMR
             </a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="./infos-pratiques.html">
+            <a class="footer__link" href="infos-pratiques.html">
               Plan de salle
             </a>
           </li>
@@ -494,11 +540,17 @@
           <li class="footer__item">
             <a class="footer__link" href="#">Mentions légales</a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="#">Politique de confidentialité</a>
+            <a class="footer__link" href="#">
+              Politique de confidentialité
+            </a>
           </li>
+
           <li class="footer__item">
-            <a class="footer__link" href="#">Conditions générales de ventes</a>
+            <a class="footer__link" href="#">
+              Conditions générales de ventes
+            </a>
           </li>
         </ul>
       </div>
@@ -510,7 +562,7 @@
           <a class="footer__social-link" href="#" aria-label="Facebook">
             <img
               class="footer__social-icon"
-              src="./assets/icons/Facebook.svg"
+              src="assets/icons/Facebook.svg"
               alt=""
               aria-hidden="true"
             />
@@ -519,7 +571,7 @@
           <a class="footer__social-link" href="#" aria-label="Instagram">
             <img
               class="footer__social-icon"
-              src="./assets/icons/Instagram.svg"
+              src="assets/icons/Instagram.svg"
               alt=""
               aria-hidden="true"
             />
@@ -528,6 +580,6 @@
       </div>
     </footer>
 
-    <script src="./src/js/main.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>

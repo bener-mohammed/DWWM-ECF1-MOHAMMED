@@ -1,0 +1,131 @@
+@use "../abstracts/variables" as *;
+
+.header {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  padding: 0 36px;
+  background-color: $color-anthracite;
+  color: $color-cream;
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+  }
+
+  &__logo-icon {
+    width: 56px;
+    height: auto;
+  }
+
+  &__logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  &__logo-name {
+    color: $color-gold;
+    font-family: $font-heading;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__logo-subtitle {
+    margin-top: 4px;
+    color: $color-gold;
+    font-family: $font-heading;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    flex: 1;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-gold;
+    }
+  }
+
+  &__button {
+    min-width: 218px;
+    min-height: 50px;
+    flex-shrink: 0;
+    font-size: 1.05rem;
+  }
+
+  &__button-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__menu-button {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__menu-line {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: $color-cream;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    min-height: 74px;
+    padding: 0 18px;
+
+    &__logo-icon {
+      width: 46px;
+    }
+
+    &__logo-name {
+      font-size: 0.95rem;
+    }
+
+    &__logo-subtitle {
+      font-size: 0.56rem;
+    }
+
+    &__nav,
+    &__button {
+      display: none;
+    }
+
+    &__menu-button {
+      display: block;
+    }
+  }
+}
