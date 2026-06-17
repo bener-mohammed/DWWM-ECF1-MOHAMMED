@@ -1,0 +1,202 @@
+@use "../abstracts/variables" as *;
+
+.practical-info {
+  padding: 44px 64px 56px;
+  background-color: $color-cream;
+  color: $color-anthracite;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    color: $color-anthracite;
+    font-family: $font-body;
+    font-size: 1.55rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+.practical-card {
+  display: flex;
+  gap: 22px;
+  min-height: 210px;
+  padding: 28px;
+  border: 2px solid rgba(212, 168, 67, 0.75);
+  border-radius: 6px;
+  background-color: rgba(245, 240, 232, 0.75);
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    color: $color-anthracite;
+    font-family: $font-heading;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+}
+
+.room-map {
+  margin-top: 54px;
+  padding-top: 46px;
+  border-top: 1px solid rgba(212, 168, 67, 0.55);
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 58px;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    color: $color-anthracite;
+    font-family: $font-heading;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: fit-content;
+    min-width: 230px;
+    min-height: 44px;
+    margin-top: 32px;
+    border-radius: 5px;
+    background-color: $color-gold;
+    color: $color-anthracite;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition:
+      background-color $transition-fast,
+      color $transition-fast,
+      transform $transition-fast;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-bordeaux;
+      color: $color-cream;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__button-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+
+  &__image {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .practical-info {
+    padding: 28px 16px 34px;
+
+    &__title {
+      margin-bottom: 22px;
+      font-size: 1.35rem;
+      text-align: left;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  .practical-card {
+    gap: 16px;
+    min-height: auto;
+    padding: 20px 18px;
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__text {
+      font-size: 0.86rem;
+    }
+  }
+
+  .room-map {
+    margin-top: 34px;
+    padding-top: 30px;
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 26px;
+    }
+
+    &__title {
+      font-size: 1.35rem;
+    }
+
+    &__text {
+      font-size: 0.9rem;
+    }
+
+    &__button {
+      width: 100%;
+      min-width: 0;
+      margin-top: 24px;
+    }
+
+    &__image {
+      height: 240px;
+    }
+  }
+}
