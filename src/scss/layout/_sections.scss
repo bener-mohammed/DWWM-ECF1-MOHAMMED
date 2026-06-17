@@ -95,58 +95,6 @@
   }
 }
 
-@media (max-width: 900px) {
-  .info-bar {
-    width: 100%;
-    grid-template-columns: 1fr 1fr 0.7fr;
-    min-height: auto;
-
-    &__item,
-    &__socials {
-      min-height: 44px;
-      padding: 0 10px;
-      gap: 8px;
-      font-size: 0.58rem;
-    }
-
-    &__icon,
-    &__social-icon {
-      width: 17px;
-      height: 17px;
-    }
-  }
-
-  .booking {
-    width: 100%;
-    margin-top: 0;
-
-    &__link {
-      min-height: 64px;
-      padding: 0 16px;
-      gap: 14px;
-    }
-
-    &__icon {
-      width: 34px;
-      height: 34px;
-    }
-
-    &__title {
-      font-size: 1.2rem;
-      white-space: normal;
-    }
-
-    &__text {
-      font-size: 0.62rem;
-      white-space: normal;
-    }
-
-    &__arrow {
-      width: 30px;
-      height: 30px;
-    }
-  }
-}
 .room-preview {
   padding: 56px 64px;
   background-color: $color-cream;
@@ -163,9 +111,9 @@
   }
 
   &__text-box {
-    max-width: 560px;
     display: flex;
     flex-direction: column;
+    max-width: 560px;
   }
 
   &__title {
@@ -228,7 +176,108 @@
   }
 }
 
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: $color-cream;
+
+  &--dark {
+    background-color: $color-anthracite;
+  }
+
+  &--bordeaux {
+    background-color: $color-bordeaux;
+  }
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 92px;
+  padding: 22px 36px;
+  border-right: 2px solid $color-gold;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  &__icon {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+
+  &__title {
+    color: $color-cream;
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 4px;
+    color: $color-cream;
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 900px) {
+  .info-bar {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    min-height: auto;
+
+    &__item,
+    &__socials {
+      min-height: 44px;
+      padding: 0 10px;
+      gap: 8px;
+      font-size: 0.58rem;
+    }
+
+    &__icon,
+    &__social-icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  .booking {
+    width: 100%;
+    margin-top: 0;
+
+    &__link {
+      min-height: 64px;
+      padding: 0 16px;
+      gap: 14px;
+    }
+
+    &__icon {
+      width: 34px;
+      height: 34px;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      white-space: normal;
+    }
+
+    &__text {
+      font-size: 0.62rem;
+      white-space: normal;
+    }
+
+    &__arrow {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   .room-preview {
     padding: 34px 16px;
 
@@ -252,6 +301,39 @@
 
     &__image {
       height: 240px;
+    }
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    min-height: 86px;
+    padding: 16px 18px;
+    gap: 12px;
+    border-right: 1px solid $color-gold;
+    border-bottom: 1px solid $color-gold;
+
+    &:nth-child(2n) {
+      border-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      border-bottom: 0;
+    }
+
+    &__icon {
+      width: 26px;
+      height: 26px;
+    }
+
+    &__title {
+      font-size: 0.78rem;
+    }
+
+    &__text {
+      font-size: 0.58rem;
     }
   }
 }
