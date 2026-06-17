@@ -787,5 +787,131 @@ p {
     font-size: 0.58rem;
   }
 }
+.programming {
+  padding: 28px 64px 56px;
+  background-color: #f5f0e8;
+  color: #2a2d34;
+}
+.programming__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.programming__title {
+  margin-bottom: 32px;
+  color: #2a2d34;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  text-align: center;
+}
+.programming__filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  max-width: 1020px;
+  margin: 0 auto 36px;
+}
+.programming__mobile-actions {
+  display: none;
+}
+.programming__grid {
+  min-height: 320px;
+  border: 2px dashed rgba(212, 168, 67, 0.55);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.programming__empty {
+  max-width: 420px;
+  padding: 24px;
+  color: #2a2d34;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.filter-box {
+  padding: 22px 28px;
+  border: 2px solid #d4a843;
+  border-radius: 4px;
+}
+.filter-box__title {
+  margin-bottom: 18px;
+  color: #2a2d34;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-align: center;
+}
+.filter-box__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.filter-box__button, .filter-box__select {
+  min-height: 34px;
+  padding: 0 14px;
+  border: 2px solid #d4a843;
+  border-radius: 4px;
+  background-color: #f5f0e8;
+  color: #2a2d34;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.filter-box__button--active {
+  background-color: #d4a843;
+}
+
+@media (max-width: 900px) {
+  .programming {
+    padding: 16px 12px 28px;
+  }
+  .programming__title {
+    margin-bottom: 16px;
+    font-size: 1.15rem;
+    text-align: left;
+  }
+  .programming__filters {
+    display: none;
+  }
+  .programming__mobile-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+  .programming__mobile-button, .programming__mobile-select {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 120px;
+    min-height: 34px;
+    border: 2px solid #d4a843;
+    border-radius: 4px;
+    background-color: #f5f0e8;
+    color: #2a2d34;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .programming__mobile-button {
+    background-color: #d4a843;
+    border-color: #d4a843;
+  }
+  .programming__mobile-button img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+  }
+  .programming__grid {
+    min-height: 260px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -3,21 +3,585 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
-      content="Le Phosphore est une salle de spectacle dédiée aux concerts, au théâtre, à la danse et aux événements culturels."
+      content="Découvrez la programmation de la salle Le Phosphore : concerts, théâtre, humour, danse et événements culturels."
     />
-    <title>Le Phosphore - Salle de spectacle</title>
+
+    <title>À l'affiche - Le Phosphore</title>
+
     <link rel="icon" type="image/png" href="assets/icons/logo.png" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,600;16..144,700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-<body>
-    
-</body>
+
+  <body>
+    <header class="header">
+      <a
+        class="header__logo-link"
+        href="index.html"
+        aria-label="Retour à l'accueil"
+      >
+        <img
+          class="header__logo-icon"
+          src="assets/img/logo.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <span class="header__logo-text">
+          <span class="header__logo-name">Le Phosphore</span>
+          <span class="header__logo-subtitle">Salle de spectacle</span>
+        </span>
+      </a>
+
+      <nav
+        class="header__nav"
+        id="main-navigation"
+        aria-label="Navigation principale"
+      >
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="index.html">Accueil</a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="programmation.html">À l'affiche</a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="infos-pratiques.html">
+              Infos pratiques
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="infos-pratiques.html#room">
+              La salle
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__button" href="programmation.html">
+        <span>Réserver</span>
+        <img
+          class="header__button-icon"
+          src="assets/icons/Ticket.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </a>
+
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+      >
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+        <span class="header__menu-line"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__curtain hero__curtain--left"
+          src="assets/img/rideau-gauche.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <img
+          class="hero__curtain hero__curtain--right"
+          src="assets/img/rideau-droite.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <img
+          class="hero__curtain-mobile"
+          src="assets/img/rideaux.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <img
+          class="hero__stage"
+          src="assets/img/scene-principale.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="hero__content">
+          <div class="hero__title-box">
+            <img
+              class="hero__logo"
+              src="assets/icons/logo.png"
+              alt=""
+              aria-hidden="true"
+            />
+
+            <p class="hero__small">Le</p>
+            <h1 class="hero__title" id="hero-title">Phosphore</h1>
+            <p class="hero__subtitle">Salle de spectacle</p>
+            <p class="hero__text">Vibrez. Partagez. Émerveillez-vous.</p>
+          </div>
+
+          <ul class="hero__categories" aria-label="Catégories de spectacles">
+            <li class="hero__category">
+              <img
+                class="hero__category-icon"
+                src="assets/icons/Mic.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Concert live</span>
+            </li>
+
+            <li class="hero__category">
+              <img
+                class="hero__category-icon"
+                src="assets/icons/Tickets.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Théâtre humour</span>
+            </li>
+
+            <li class="hero__category">
+              <img
+                class="hero__category-icon"
+                src="assets/icons/Dancing.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Danse performances</span>
+            </li>
+
+            <li class="hero__category">
+              <img
+                class="hero__category-icon"
+                src="assets/icons/Event.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Événements culturels</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="info-bar" aria-label="Informations rapides">
+        <div class="info-bar__item">
+          <img
+            class="info-bar__icon"
+            src="assets/icons/Location.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>Au cœur de la culture</span>
+        </div>
+
+        <div class="info-bar__item">
+          <img
+            class="info-bar__icon"
+            src="assets/icons/Www.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <span>lephosphore.fr</span>
+        </div>
+
+        <div class="info-bar__socials" aria-label="Réseaux sociaux">
+          <a class="info-bar__link" href="#" aria-label="Facebook">
+            <img
+              class="info-bar__social-icon"
+              src="assets/icons/Facebook.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+
+          <a class="info-bar__link" href="#" aria-label="Instagram">
+            <img
+              class="info-bar__social-icon"
+              src="assets/icons/Instagram.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section class="booking" aria-label="Réservation">
+        <a class="booking__link" href="programmation.html">
+          <img
+            class="booking__icon"
+            src="assets/icons/Tickets.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <span class="booking__content">
+            <span class="booking__title">Réservez vos places</span>
+            <span class="booking__text">Spectacles · Émotions · Souvenirs</span>
+          </span>
+
+          <img
+            class="booking__arrow"
+            src="assets/icons/Arrow-Up.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </a>
+      </section>
+
+      <section class="programming" aria-labelledby="programming-title">
+        <div class="programming__container">
+          <h2 class="programming__title" id="programming-title">À l’affiche</h2>
+
+          <div
+            class="programming__filters"
+            aria-label="Filtres de programmation"
+          >
+            <div class="filter-box">
+              <h3 class="filter-box__title">Type d’événement</h3>
+
+              <div class="filter-box__actions">
+                <button
+                  class="filter-box__button filter-box__button--active"
+                  type="button"
+                >
+                  Tous
+                </button>
+
+                <button class="filter-box__button" type="button">
+                  Concert
+                </button>
+
+                <button class="filter-box__button" type="button">
+                  Théâtre
+                </button>
+
+                <button class="filter-box__button" type="button">
+                  Humour
+                </button>
+              </div>
+            </div>
+
+            <div class="filter-box">
+              <h3 class="filter-box__title">Disponibilité</h3>
+
+              <div class="filter-box__actions">
+                <button
+                  class="filter-box__button filter-box__button--active"
+                  type="button"
+                >
+                  Tous
+                </button>
+
+                <button class="filter-box__button" type="button">
+                  Disponible
+                </button>
+
+                <button class="filter-box__button" type="button">
+                  Complet
+                </button>
+
+                <select
+                  class="filter-box__select"
+                  aria-label="Trier les spectacles"
+                >
+                  <option>Trier : Date</option>
+                  <option>Prix croissant</option>
+                  <option>Prix décroissant</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="programming__mobile-actions">
+            <button class="programming__mobile-button" type="button">
+              <img src="assets/icons/Event.png" alt="" aria-hidden="true" />
+              <span>Filtrer</span>
+            </button>
+
+            <select
+              class="programming__mobile-select"
+              aria-label="Trier les spectacles"
+            >
+              <option>Trier</option>
+              <option>Date</option>
+              <option>Prix</option>
+            </select>
+          </div>
+
+          <div class="programming__grid" id="programming-cards">
+            <div class="programming__empty">
+              Les spectacles seront affichés ici prochainement.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services services--dark" aria-label="Types de spectacles">
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Mic.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Concert live</h3>
+            <p class="service-card__text">
+              Tous les styles, toutes les vibrations
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Tickets.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Théâtre humour</h3>
+            <p class="service-card__text">Émotions et classiques revisités</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Dancing.png"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Danse performances</h3>
+            <p class="service-card__text">Mouvements et créations</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Event.png"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Événements culturels</h3>
+            <p class="service-card__text">Temps forts et rencontres</p>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="services services--bordeaux"
+        aria-label="Services de la salle"
+      >
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Wheelchair.png"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Accessibilité PMR</h3>
+            <p class="service-card__text">Un accueil adapté pour tous</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Wine.png"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Bar & restaurant</h3>
+            <p class="service-card__text">Avant ou après le spectacle</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Hanger.png"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Vestiaire</h3>
+            <p class="service-card__text">
+              Profitez du spectacle en toute liberté
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            class="service-card__icon"
+            src="assets/icons/Sofa.png"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="service-card__content">
+            <h3 class="service-card__title">Salle 120 places</h3>
+            <p class="service-card__text">
+              Une expérience intime et conviviale
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__brand">
+        <img
+          class="footer__logo"
+          src="assets/img/logo.png"
+          alt="Logo Le Phosphore"
+        />
+
+        <p class="footer__text">Vibrez. Partagez. Émerveillez-vous.</p>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Le Phosphore</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index.html">Accueil</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="programmation.html">À l'affiche</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html">
+              Infos pratiques
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html#room">
+              La salle
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Infos pratiques</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html">Accès</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html">Tarifs</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html">Services</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html">
+              Accessibilité PMR
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="infos-pratiques.html">
+              Plan de salle
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Legal</h2>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Mentions légales</a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Politique de confidentialité
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Conditions générales de ventes
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__title">Suivez-nous</h2>
+
+        <div class="footer__socials">
+          <a class="footer__social-link" href="#" aria-label="Facebook">
+            <img
+              class="footer__social-icon"
+              src="assets/icons/Facebook.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+
+          <a class="footer__social-link" href="#" aria-label="Instagram">
+            <img
+              class="footer__social-icon"
+              src="assets/icons/Instagram.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
