@@ -13,6 +13,7 @@
   padding: 0 36px;
   background-color: rgba(42, 45, 52, 0.5);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   color: $color-cream;
 
   &__logo-link {
@@ -110,7 +111,9 @@
   .header {
     min-height: 74px;
     padding: 0 18px;
-    background-color: rgba(42, 45, 52, 0.88);
+    background-color: rgba(42, 45, 52, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 
     &__logo-icon {
       width: 46px;
