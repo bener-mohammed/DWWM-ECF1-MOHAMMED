@@ -108,7 +108,7 @@
     border-radius: 5px;
     background-color: $color-gold;
     color: $color-anthracite;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     transition:
       background-color $transition-fast,
@@ -134,6 +134,9 @@
     height: 340px;
     object-fit: cover;
     border-radius: 4px;
+  }
+  &__button-title{
+    font-size: 12px;
   }
 }
 
