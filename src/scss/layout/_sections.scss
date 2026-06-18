@@ -273,6 +273,24 @@
   }
 }
 
+/* tablet layout */
+
+@media (max-width: $breakpoint-desktop) {
+  .booking {
+    &__title {
+      font-size: 1.2rem;
+    }
+
+    &__text {
+      font-size: 0.65rem;
+    }
+  }
+
+  .service-card {
+    padding: 20px 24px;
+  }
+}
+
 /* Mobile layout */
 
 @media (max-width: 900px) {

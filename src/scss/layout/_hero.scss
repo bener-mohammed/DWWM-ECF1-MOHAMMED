@@ -202,6 +202,23 @@
     opacity: 0;
   }
 }
+
+@media (max-width: $breakpoint-desktop) {
+  .hero {
+    &__content {
+      width: min(100% - 48px, $container-width);
+    }
+
+    &__title {
+      font-size: clamp(3rem, 5vw, 4rem);
+    }
+
+    &__categories {
+      gap: 34px;
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .hero {
     min-height: 360px;
