@@ -263,6 +263,19 @@ The CSS file `assets/css/main.css` was checked with the W3C CSS Validation Servi
 
 The JavaScript files were checked with ESLint and no errors were reported.
 
+## Eco-design
+
+Several eco-design choices were applied during the project:
+
+- No heavy front-end framework was used.
+- The project uses vanilla JavaScript instead of an additional library.
+- SASS files are organized by responsibility to avoid duplicated CSS.
+- Show cards share one common SCSS component.
+- JavaScript files are only loaded on pages where they are needed.
+- Generated source map files are ignored by Git.
+- Images were compressed before final deployment to reduce page weight.
+- Unused files are removed when they are not needed by the project.
+
 ## Author
 
 Project created by Mohammed BENERROUA as part of the DWWM 2026 ECF assessment.
