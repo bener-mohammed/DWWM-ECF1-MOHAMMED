@@ -6,14 +6,14 @@ const sortSelect = document.querySelector("#sort-select");
 const mobileSortSelect = document.querySelector("#mobile-sort-select");
 
 const showImages = {
-  1: "assets/img/cyrano-de-bergerac.png",
-  2: "assets/img/marina-music.png",
-  3: "assets/img/paul.png",
-  4: "assets/img/fadyla-camara.png",
-  5: "assets/img/En-Attendant.png",
-  6: "assets/img/Ahmed.png",
-  7: "assets/img/Nora.png",
-  8: "assets/img/Jamel.png",
+  1: "assets/img/cyrano-de-bergerac.webp",
+  2: "assets/img/marina-music.webp",
+  3: "assets/img/paul.webp",
+  4: "assets/img/fadyla-camara.webp",
+  5: "assets/img/En-Attendant.webp",
+  6: "assets/img/Ahmed.webp",
+  7: "assets/img/Nora.webp",
+  8: "assets/img/Jamel.webp",
 };
 
 const showTypes = {
@@ -67,7 +67,7 @@ function makeShowCard(show) {
   const isFull = seatsLeft === 0;
 
   const imagePath =
-    show.image || showImages[show.id] || "assets/img/scene-principale.png";
+    show.image || showImages[show.id] || "assets/img/scene-principale.webp";
 
   const typeText = showTypes[show.type] || show.type;
 
