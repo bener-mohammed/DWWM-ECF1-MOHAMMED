@@ -1,9 +1,14 @@
+// Get the card container from the page.
+
 const showList = document.querySelector("#show-list");
 
 const typeButtons = document.querySelectorAll("[data-type]");
 const statusButtons = document.querySelectorAll("[data-status]");
 const sortSelect = document.querySelector("#sort-select");
 const mobileSortSelect = document.querySelector("#mobile-sort-select");
+
+
+// Default images used when the JSON image field is empty.
 
 const showImages = {
   1: "assets/img/cyrano-de-bergerac.webp",
@@ -26,6 +31,8 @@ let allShows = [];
 let selectedType = "all";
 let selectedStatus = "all";
 let selectedSort = "date";
+
+// Clean text before adding it into the HTML.
 
 function cleanText(text) {
   return String(text)
@@ -60,6 +67,8 @@ function getSeatsLeft(show) {
 function getFillPercent(show) {
   return Math.round((show.places_vendues / show.places_total) * 100);
 }
+
+// Create the HTML for one show card.
 
 function makeShowCard(show) {
   const seatsLeft = getSeatsLeft(show);
@@ -143,6 +152,8 @@ function showCards(shows) {
   showList.innerHTML = showsToDisplay.map(makeShowCard).join("");
 }
 
+// Apply type and availability filters.
+
 function filterShows(shows) {
   return shows.filter((show) => {
     const seatsLeft = getSeatsLeft(show);
@@ -158,6 +169,8 @@ function filterShows(shows) {
     return typeIsOk && statusIsOk;
   });
 }
+
+// Sort shows by date or price.
 
 function sortShows(shows) {
   const sortedShows = [...shows];
@@ -245,6 +258,8 @@ function setupSort() {
     });
   }
 }
+
+// Load shows from the JSON file.
 
 async function loadShows() {
   if (!showList) {

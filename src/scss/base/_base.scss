@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 
 // Applique un calcul de taille plus logique à tous les éléments
+// Use a better box model for all elements.
 
 *,
 *::before,
@@ -13,6 +14,7 @@ html {
 }
 
 // Style général du site
+// Set the main page style.
 
 body {
   margin: 0;
@@ -24,6 +26,7 @@ body {
 }
 
 // Les images ne dépassent jamais leur conteneur
+// Keep images inside their container.
 
 img {
   max-width: 100%;
@@ -40,6 +43,7 @@ button {
 }
 
 //Les titres n'ont pas de marge par défaut et utilisent la police des titres
+// Remove default title margins and use the heading font.
 
 h1,
 h2,

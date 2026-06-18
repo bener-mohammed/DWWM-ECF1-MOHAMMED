@@ -1,8 +1,6 @@
 @use "../abstracts/variables" as *;
 
-/* =========================
-   PROGRAMMING PAGE
-========================= */
+/* Programming page layout */
 
 .show-page {
   padding: 28px 64px 56px;
@@ -36,9 +34,7 @@
   }
 }
 
-/* =========================
-   FILTER BOX
-========================= */
+/* Filter boxes */
 
 .show-filter {
   padding: 22px 28px;
@@ -81,9 +77,7 @@
   }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* Mobile layout */
 
 @media (max-width: 900px) {
   .show-page {

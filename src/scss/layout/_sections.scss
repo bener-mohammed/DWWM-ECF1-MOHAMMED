@@ -1,8 +1,6 @@
 @use "../abstracts/variables" as *;
 
-/* =========================
-   INFO BAR
-========================= */
+/* Quick information bar */
 
 .info-bar {
   display: grid;
@@ -47,9 +45,7 @@
   }
 }
 
-/* =========================
-   BOOKING BAR
-========================= */
+/* Booking call to action */
 
 .booking {
   width: 34%;
@@ -103,9 +99,7 @@
   }
 }
 
-/* =========================
-   HOME SHOWS
-========================= */
+/* Homepage show section */
 
 .home-shows {
   padding: 44px 64px 52px;
@@ -144,9 +138,7 @@
   }
 }
 
-/* =========================
-   ROOM PREVIEW
-========================= */
+/* Room preview section */
 
 .room-preview {
   padding: 56px 64px;
@@ -229,9 +221,7 @@
   }
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* Service blocks */
 
 .services {
   display: grid;
@@ -283,9 +273,7 @@
   }
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* Mobile layout */
 
 @media (max-width: 900px) {
   .info-bar {
