@@ -252,71 +252,114 @@
         </a>
       </section>
 
-<section class="show-page" aria-labelledby="show-page-title">
-  <div class="show-page__container">
-    <h2 class="show-page__title" id="show-page-title">À l’affiche</h2>
+      <section class="show-page" aria-labelledby="show-page-title">
+        <div class="show-page__container">
+          <h2 class="show-page__title" id="show-page-title">À l’affiche</h2>
 
-    <div class="show-page__filters" aria-label="Filtres de programmation">
-      <div class="show-filter">
-        <h3 class="show-filter__title">Type d’événement</h3>
+          <div class="show-page__filters" aria-label="Filtres de programmation">
+            <div class="show-filter">
+              <h3 class="show-filter__title">Type d’événement</h3>
 
-        <div class="show-filter__buttons">
-          <button
-            class="show-filter__button show-filter__button--active"
-            type="button"
-          >
-            Tous
-          </button>
+              <div class="show-filter__buttons">
+                <button
+                  class="show-filter__button show-filter__button--active"
+                  type="button"
+                  data-type="all"
+                >
+                  Tous
+                </button>
 
-          <button class="show-filter__button" type="button">Concert</button>
-          <button class="show-filter__button" type="button">Théâtre</button>
-          <button class="show-filter__button" type="button">Humour</button>
+                <button
+                  class="show-filter__button"
+                  type="button"
+                  data-type="concert"
+                >
+                  Concert
+                </button>
+
+                <button
+                  class="show-filter__button"
+                  type="button"
+                  data-type="theatre"
+                >
+                  Théâtre
+                </button>
+
+                <button
+                  class="show-filter__button"
+                  type="button"
+                  data-type="standup"
+                >
+                  Humour
+                </button>
+              </div>
+            </div>
+
+            <div class="show-filter">
+              <h3 class="show-filter__title">Disponibilité</h3>
+
+              <div class="show-filter__buttons">
+                <button
+                  class="show-filter__button show-filter__button--active"
+                  type="button"
+                  data-status="all"
+                >
+                  Tous
+                </button>
+
+                <button
+                  class="show-filter__button"
+                  type="button"
+                  data-status="available"
+                >
+                  Disponible
+                </button>
+
+                <button
+                  class="show-filter__button"
+                  type="button"
+                  data-status="full"
+                >
+                  Complet
+                </button>
+
+                <select
+                  class="show-filter__select"
+                  id="sort-select"
+                  aria-label="Trier les spectacles"
+                >
+                  <option value="date">Trier : Date</option>
+                  <option value="price-asc">Prix croissant</option>
+                  <option value="price-desc">Prix décroissant</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="show-page__mobile-actions">
+            <button class="show-page__mobile-button" type="button">
+              <img src="assets/icons/filtre.png" alt="" aria-hidden="true" />
+              <span>Filtrer</span>
+            </button>
+
+            <select
+              class="show-page__mobile-select"
+              id="mobile-sort-select"
+              aria-label="Trier les spectacles"
+            >
+              <option value="date">Date</option>
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix décroissant</option>
+            </select>
+          </div>
+
+          <div class="show-list" id="show-list" aria-live="polite">
+            <div class="show-list__empty">
+              Les spectacles seront affichés ici prochainement.
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="show-filter">
-        <h3 class="show-filter__title">Disponibilité</h3>
-
-        <div class="show-filter__buttons">
-          <button
-            class="show-filter__button show-filter__button--active"
-            type="button"
-          >
-            Tous
-          </button>
-
-          <button class="show-filter__button" type="button">Disponible</button>
-          <button class="show-filter__button" type="button">Complet</button>
-
-          <select class="show-filter__select" aria-label="Trier les spectacles">
-            <option>Trier : Date</option>
-            <option>Prix croissant</option>
-            <option>Prix décroissant</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <div class="show-page__mobile-actions">
-      <button class="show-page__mobile-button" type="button">
-        <img src="assets/icons/filtre.png" alt="" aria-hidden="true" />
-        <span>Filtrer</span>
-      </button>
-
-      <select class="show-page__mobile-select" aria-label="Trier les spectacles">
-        <option>Trier</option>
-        <option>Date</option>
-        <option>Prix</option>
-      </select>
-    </div>
-
-    <div class="show-list" id="show-list" aria-live="polite">
-      <div class="show-list__empty">
-        Les spectacles seront affichés ici prochainement.
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <section class="services services--dark" aria-label="Types de spectacles">
         <article class="service-card">
@@ -524,9 +567,7 @@
           </li>
 
           <li class="footer__item">
-            <a class="footer__link" href="#">
-              Politique de confidentialité
-            </a>
+            <a class="footer__link" href="#"> Politique de confidentialité </a>
           </li>
 
           <li class="footer__item">
