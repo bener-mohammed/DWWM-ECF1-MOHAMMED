@@ -281,7 +281,12 @@ Several eco-design choices were applied during the project:
 The project is available online with GitHub Pages:
 https://bener-mohammed.github.io/DWWM-ECF1-MOHAMMED/index.html
 
+The project is available online with OVH : 
+https://spectacle.mohammed-benerroua.fr
 
+## Eco-design
+
+Large images have been converted to WebP format to reduce file weight and improve loading performance.
 
 ## Author
 
