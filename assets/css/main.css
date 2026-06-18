@@ -492,8 +492,8 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 3;
-  background-color: #000;
+  z-index: 5;
+  background-color: #2A2D34;
   pointer-events: none;
   animation: hero-dark-reveal 1.2s ease-out both;
 }
@@ -510,7 +510,7 @@ p {
 .hero__curtain {
   position: absolute;
   top: -2%;
-  z-index: 4;
+  z-index: 6;
   height: 104%;
   width: auto;
   pointer-events: none;
