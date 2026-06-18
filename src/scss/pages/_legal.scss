@@ -1,0 +1,84 @@
+@use "../abstracts/variables" as *;
+
+.legal-page {
+  padding: 130px 64px 56px;
+  background-color: $color-cream;
+  color: $color-anthracite;
+
+  &__container {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    color: $color-anthracite;
+    font-family: $font-heading;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  &__intro {
+    max-width: 760px;
+    margin: 0 auto 34px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+.legal-block {
+  padding: 26px 0;
+  border-top: 1px solid rgba(212, 168, 67, 0.55);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(212, 168, 67, 0.55);
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    color: $color-bordeaux;
+    font-family: $font-heading;
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-size: 0.96rem;
+    line-height: 1.6;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .legal-page {
+    padding: 104px 18px 36px;
+
+    &__title {
+      font-size: 1.65rem;
+      text-align: left;
+    }
+
+    &__intro {
+      margin-bottom: 22px;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+  }
+
+  .legal-block {
+    padding: 22px 0;
+
+    &__title {
+      font-size: 1.15rem;
+    }
+
+    &__text {
+      font-size: 0.86rem;
+    }
+  }
+}
