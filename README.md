@@ -276,6 +276,13 @@ Several eco-design choices were applied during the project:
 - Images were compressed before final deployment to reduce page weight.
 - Unused files are removed when they are not needed by the project.
 
+## Live demo
+
+The project is available online with GitHub Pages:
+https://bener-mohammed.github.io/DWWM-ECF1-MOHAMMED/index.html
+
+
+
 ## Author
 
 Project created by Mohammed BENERROUA as part of the DWWM 2026 ECF assessment.
