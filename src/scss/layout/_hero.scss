@@ -21,6 +21,15 @@
     );
     pointer-events: none;
   }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    background-color: #000;
+    pointer-events: none;
+    animation: hero-dark-reveal 1.2s ease-out both;
+  }
 
   &__stage {
     position: absolute;
@@ -40,14 +49,19 @@
     height: 104%;
     width: auto;
     pointer-events: none;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
   }
 
   &__curtain--left {
     left: -22px;
+    animation-name: curtain-left-open;
   }
 
   &__curtain--right {
     right: -22px;
+    animation-name: curtain-right-open;
   }
 
   &__curtain-mobile {
@@ -156,7 +170,38 @@
     object-fit: contain;
   }
 }
+@keyframes curtain-left-open {
+  from {
+    transform: translateX(150px);
+  }
 
+  to {
+    transform: translateX(-18px);
+  }
+}
+
+@keyframes curtain-right-open {
+  from {
+    transform: translateX(-150px);
+  }
+
+  to {
+    transform: translateX(18px);
+  }
+}
+@keyframes hero-dark-reveal {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0.85;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 @media (max-width: 900px) {
   .hero {
     min-height: 360px;
