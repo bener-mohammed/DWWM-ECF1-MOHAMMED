@@ -252,93 +252,71 @@
         </a>
       </section>
 
-      <section class="programming" aria-labelledby="programming-title">
-        <div class="programming__container">
-          <h2 class="programming__title" id="programming-title">À l’affiche</h2>
+<section class="show-page" aria-labelledby="show-page-title">
+  <div class="show-page__container">
+    <h2 class="show-page__title" id="show-page-title">À l’affiche</h2>
 
-          <div
-            class="programming__filters"
-            aria-label="Filtres de programmation"
+    <div class="show-page__filters" aria-label="Filtres de programmation">
+      <div class="show-filter">
+        <h3 class="show-filter__title">Type d’événement</h3>
+
+        <div class="show-filter__buttons">
+          <button
+            class="show-filter__button show-filter__button--active"
+            type="button"
           >
-            <div class="filter-box">
-              <h3 class="filter-box__title">Type d’événement</h3>
+            Tous
+          </button>
 
-              <div class="filter-box__actions">
-                <button
-                  class="filter-box__button filter-box__button--active"
-                  type="button"
-                >
-                  Tous
-                </button>
-
-                <button class="filter-box__button" type="button">
-                  Concert
-                </button>
-
-                <button class="filter-box__button" type="button">
-                  Théâtre
-                </button>
-
-                <button class="filter-box__button" type="button">
-                  Humour
-                </button>
-              </div>
-            </div>
-
-            <div class="filter-box">
-              <h3 class="filter-box__title">Disponibilité</h3>
-
-              <div class="filter-box__actions">
-                <button
-                  class="filter-box__button filter-box__button--active"
-                  type="button"
-                >
-                  Tous
-                </button>
-
-                <button class="filter-box__button" type="button">
-                  Disponible
-                </button>
-
-                <button class="filter-box__button" type="button">
-                  Complet
-                </button>
-
-                <select
-                  class="filter-box__select"
-                  aria-label="Trier les spectacles"
-                >
-                  <option>Trier : Date</option>
-                  <option>Prix croissant</option>
-                  <option>Prix décroissant</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="programming__mobile-actions">
-            <button class="programming__mobile-button" type="button">
-              <img src="assets/icons/filtre.png" alt="" aria-hidden="true" />
-              <span>Filtrer</span>
-            </button>
-
-            <select
-              class="programming__mobile-select"
-              aria-label="Trier les spectacles"
-            >
-              <option>Trier</option>
-              <option>Date</option>
-              <option>Prix</option>
-            </select>
-          </div>
-
-          <div class="programming__grid" id="programming-cards">
-            <div class="programming__empty">
-              Les spectacles seront affichés ici prochainement.
-            </div>
-          </div>
+          <button class="show-filter__button" type="button">Concert</button>
+          <button class="show-filter__button" type="button">Théâtre</button>
+          <button class="show-filter__button" type="button">Humour</button>
         </div>
-      </section>
+      </div>
+
+      <div class="show-filter">
+        <h3 class="show-filter__title">Disponibilité</h3>
+
+        <div class="show-filter__buttons">
+          <button
+            class="show-filter__button show-filter__button--active"
+            type="button"
+          >
+            Tous
+          </button>
+
+          <button class="show-filter__button" type="button">Disponible</button>
+          <button class="show-filter__button" type="button">Complet</button>
+
+          <select class="show-filter__select" aria-label="Trier les spectacles">
+            <option>Trier : Date</option>
+            <option>Prix croissant</option>
+            <option>Prix décroissant</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-page__mobile-actions">
+      <button class="show-page__mobile-button" type="button">
+        <img src="assets/icons/filtre.png" alt="" aria-hidden="true" />
+        <span>Filtrer</span>
+      </button>
+
+      <select class="show-page__mobile-select" aria-label="Trier les spectacles">
+        <option>Trier</option>
+        <option>Date</option>
+        <option>Prix</option>
+      </select>
+    </div>
+
+    <div class="show-list" id="show-list" aria-live="polite">
+      <div class="show-list__empty">
+        Les spectacles seront affichés ici prochainement.
+      </div>
+    </div>
+  </div>
+</section>
 
       <section class="services services--dark" aria-label="Types de spectacles">
         <article class="service-card">
@@ -584,5 +562,6 @@
       </div>
     </footer>
     <script src="src/js/menu.js"></script>
+    <script src="src/js/spectacles.js"></script>
   </body>
 </html>

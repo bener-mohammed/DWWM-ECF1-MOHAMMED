@@ -1,5 +1,9 @@
 @use "../abstracts/variables" as *;
 
+/* =========================
+   INFO BAR
+========================= */
+
 .info-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -18,10 +22,10 @@
     gap: 14px;
     min-height: 42px;
     padding: 0 20px;
+    border-right: 1px solid $color-anthracite;
     font-size: 0.74rem;
     font-weight: 600;
     text-transform: uppercase;
-    border-right: 1px solid $color-anthracite;
   }
 
   &__socials {
@@ -42,6 +46,10 @@
     justify-content: center;
   }
 }
+
+/* =========================
+   BOOKING BAR
+========================= */
 
 .booking {
   width: 34%;
@@ -94,6 +102,51 @@
     transform: rotate(90deg);
   }
 }
+
+/* =========================
+   HOME SHOWS
+========================= */
+
+.home-shows {
+  padding: 44px 64px 52px;
+  background-color: $color-cream;
+  color: $color-anthracite;
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    color: $color-anthracite;
+    font-family: $font-body;
+    font-size: 1.55rem;
+    font-weight: 500;
+  }
+
+  &__link {
+    color: $color-anthracite;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-bordeaux;
+    }
+  }
+}
+
+/* =========================
+   ROOM PREVIEW
+========================= */
 
 .room-preview {
   padding: 56px 64px;
@@ -176,6 +229,10 @@
   }
 }
 
+/* =========================
+   SERVICES
+========================= */
+
 .services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -226,6 +283,10 @@
   }
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
   .info-bar {
     width: 100%;
@@ -275,6 +336,25 @@
     &__arrow {
       width: 30px;
       height: 30px;
+    }
+  }
+
+  .home-shows {
+    padding: 28px 16px 34px;
+
+    &__top {
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__link {
+      font-size: 0.68rem;
+      text-align: right;
     }
   }
 

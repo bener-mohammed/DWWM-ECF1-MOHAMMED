@@ -251,7 +251,28 @@
           />
         </a>
       </section>
+      <section class="home-shows" aria-labelledby="home-shows-title">
+        <div class="home-shows__container">
+          <div class="home-shows__top">
+            <h2 class="home-shows__title" id="home-shows-title">À l’affiche</h2>
 
+            <a class="home-shows__link" href="programmation.html">
+              Voir toute la programmation
+            </a>
+          </div>
+
+          <div
+            class="show-list"
+            id="show-list"
+            data-limit="3"
+            aria-live="polite"
+          >
+            <div class="show-list__empty">
+              Les spectacles seront affichés ici prochainement.
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         class="room-preview"
         id="room"
@@ -535,5 +556,6 @@
       </div>
     </footer>
     <script src="src/js/menu.js"></script>
+    <script src="src/js/spectacles.js"></script>
   </body>
 </html>

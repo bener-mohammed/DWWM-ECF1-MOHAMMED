@@ -1,6 +1,10 @@
 @use "../abstracts/variables" as *;
 
-.programming {
+/* =========================
+   PROGRAMMING PAGE
+========================= */
+
+.show-page {
   padding: 28px 64px 56px;
   background-color: $color-cream;
   color: $color-anthracite;
@@ -30,26 +34,13 @@
   &__mobile-actions {
     display: none;
   }
-
-  &__grid {
-    min-height: 320px;
-    border: 2px dashed rgba(212, 168, 67, 0.55);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__empty {
-    max-width: 420px;
-    padding: 24px;
-    color: $color-anthracite;
-    font-size: 1rem;
-    text-align: center;
-  }
 }
 
-.filter-box {
+/* =========================
+   FILTER BOX
+========================= */
+
+.show-filter {
   padding: 22px 28px;
   border: 2px solid $color-gold;
   border-radius: 4px;
@@ -63,7 +54,7 @@
     text-align: center;
   }
 
-  &__actions {
+  &__buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +81,12 @@
   }
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
-  .programming {
+  .show-page {
     padding: 16px 12px 28px;
 
     &__title {
@@ -131,17 +126,12 @@
 
     &__mobile-button {
       background-color: $color-gold;
-      border-color: $color-gold;
     }
 
     &__mobile-button img {
       width: 15px;
       height: 15px;
       object-fit: contain;
-    }
-
-    &__grid {
-      min-height: 260px;
     }
   }
 }

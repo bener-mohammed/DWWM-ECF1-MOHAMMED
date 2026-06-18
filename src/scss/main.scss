@@ -1,9 +1,14 @@
 @use "./abstracts/variables";
+
 @use "./base/base";
+
 @use "./components/button";
 @use "./components/header";
+@use "./components/card";
 @use "./components/footer";
+
 @use "./layout/hero";
 @use "./layout/sections";
+
 @use "./pages/programming";
 @use "./pages/practical-info";

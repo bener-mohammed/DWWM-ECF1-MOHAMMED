@@ -237,6 +237,155 @@ p {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+.show-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 34px;
+}
+.show-list__empty {
+  grid-column: 1/-1;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border: 2px dashed rgba(212, 168, 67, 0.55);
+  border-radius: 6px;
+  color: #2a2d34;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.show-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 550px;
+  padding: 18px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #2a2d34;
+  color: #f5f0e8;
+}
+.show-card__image {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.show-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.show-card__tag {
+  margin-bottom: 6px;
+  color: #f5f0e8;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.show-card__title {
+  color: #f5f0e8;
+  font-family: "Montagu Slab", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.show-card__artist, .show-card__date, .show-card__price, .show-card__seats, .show-card__full {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.show-card__artist {
+  margin-top: 8px;
+}
+.show-card__date {
+  margin-top: 6px;
+}
+.show-card__price {
+  margin-top: 4px;
+}
+.show-card__bar {
+  width: 100%;
+  height: 8px;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: rgba(245, 240, 232, 0.25);
+}
+.show-card__bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #d4a843;
+}
+.show-card__seats, .show-card__full {
+  margin-top: 6px;
+}
+.show-card__full {
+  color: #d4a843;
+  font-weight: 700;
+}
+.show-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 0.75rem;
+  width: 68%;
+  min-height: 48px;
+  margin-top: auto;
+  border-radius: 5px;
+  background-color: #d4a843;
+  color: #2a2d34;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.show-card__button:hover, .show-card__button:focus-visible {
+  background-color: #6b1d3a;
+  color: #f5f0e8;
+  transform: translateY(-2px);
+}
+.show-card__button-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .show-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .show-card {
+    min-height: 0;
+    padding: 10px;
+  }
+  .show-card__image {
+    height: 190px;
+  }
+  .show-card__content {
+    padding-top: 10px;
+  }
+  .show-card__tag, .show-card__artist, .show-card__date, .show-card__price, .show-card__seats, .show-card__full {
+    font-size: 0.78rem;
+  }
+  .show-card__title {
+    font-size: 1rem;
+  }
+  .show-card__button {
+    width: 88%;
+    min-height: 34px;
+    margin-top: 12px;
+    font-size: 0.68rem;
+  }
+  .show-card__button-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
 .footer {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 0.8fr;
@@ -549,6 +698,9 @@ p {
     height: 18px;
   }
 }
+/* =========================
+   INFO BAR
+========================= */
 .info-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -566,10 +718,10 @@ p {
   gap: 14px;
   min-height: 42px;
   padding: 0 20px;
+  border-right: 1px solid #2a2d34;
   font-size: 0.74rem;
   font-weight: 600;
   text-transform: uppercase;
-  border-right: 1px solid #2a2d34;
 }
 .info-bar__socials {
   gap: 18px;
@@ -586,6 +738,9 @@ p {
   justify-content: center;
 }
 
+/* =========================
+   BOOKING BAR
+========================= */
 .booking {
   width: 34%;
   min-height: 66px;
@@ -632,6 +787,43 @@ p {
   transform: rotate(90deg);
 }
 
+/* =========================
+   HOME SHOWS
+========================= */
+.home-shows {
+  padding: 44px 64px 52px;
+  background-color: #f5f0e8;
+  color: #2a2d34;
+}
+.home-shows__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.home-shows__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.home-shows__title {
+  color: #2a2d34;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+.home-shows__link {
+  color: #2a2d34;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.home-shows__link:hover, .home-shows__link:focus-visible {
+  color: #6b1d3a;
+}
+
+/* =========================
+   ROOM PREVIEW
+========================= */
 .room-preview {
   padding: 56px 64px;
   background-color: #f5f0e8;
@@ -700,6 +892,9 @@ p {
   border-radius: 2px;
 }
 
+/* =========================
+   SERVICES
+========================= */
 .services {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -744,6 +939,9 @@ p {
   line-height: 1.2;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 900px) {
   .info-bar {
     width: 100%;
@@ -784,6 +982,21 @@ p {
   .booking__arrow {
     width: 30px;
     height: 30px;
+  }
+  .home-shows {
+    padding: 28px 16px 34px;
+  }
+  .home-shows__top {
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .home-shows__title {
+    font-size: 1.3rem;
+  }
+  .home-shows__link {
+    font-size: 0.68rem;
+    text-align: right;
   }
   .room-preview {
     padding: 34px 16px;
@@ -832,16 +1045,19 @@ p {
     font-size: 0.58rem;
   }
 }
-.programming {
+/* =========================
+   PROGRAMMING PAGE
+========================= */
+.show-page {
   padding: 28px 64px 56px;
   background-color: #f5f0e8;
   color: #2a2d34;
 }
-.programming__container {
+.show-page__container {
   max-width: 1180px;
   margin: 0 auto;
 }
-.programming__title {
+.show-page__title {
   margin-bottom: 32px;
   color: #2a2d34;
   font-family: "Montserrat", Arial, sans-serif;
@@ -849,38 +1065,26 @@ p {
   font-weight: 500;
   text-align: center;
 }
-.programming__filters {
+.show-page__filters {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 54px;
   max-width: 1020px;
   margin: 0 auto 36px;
 }
-.programming__mobile-actions {
+.show-page__mobile-actions {
   display: none;
 }
-.programming__grid {
-  min-height: 320px;
-  border: 2px dashed rgba(212, 168, 67, 0.55);
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.programming__empty {
-  max-width: 420px;
-  padding: 24px;
-  color: #2a2d34;
-  font-size: 1rem;
-  text-align: center;
-}
 
-.filter-box {
+/* =========================
+   FILTER BOX
+========================= */
+.show-filter {
   padding: 22px 28px;
   border: 2px solid #d4a843;
   border-radius: 4px;
 }
-.filter-box__title {
+.show-filter__title {
   margin-bottom: 18px;
   color: #2a2d34;
   font-family: "Montserrat", Arial, sans-serif;
@@ -888,14 +1092,14 @@ p {
   font-weight: 500;
   text-align: center;
 }
-.filter-box__actions {
+.show-filter__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 22px;
 }
-.filter-box__button, .filter-box__select {
+.show-filter__button, .show-filter__select {
   min-height: 34px;
   padding: 0 14px;
   border: 2px solid #d4a843;
@@ -907,29 +1111,32 @@ p {
   font-weight: 500;
   cursor: pointer;
 }
-.filter-box__button--active {
+.show-filter__button--active {
   background-color: #d4a843;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 900px) {
-  .programming {
+  .show-page {
     padding: 16px 12px 28px;
   }
-  .programming__title {
+  .show-page__title {
     margin-bottom: 16px;
     font-size: 1.15rem;
     text-align: left;
   }
-  .programming__filters {
+  .show-page__filters {
     display: none;
   }
-  .programming__mobile-actions {
+  .show-page__mobile-actions {
     display: flex;
     justify-content: space-between;
     gap: 16px;
     margin-bottom: 22px;
   }
-  .programming__mobile-button, .programming__mobile-select {
+  .show-page__mobile-button, .show-page__mobile-select {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -945,17 +1152,13 @@ p {
     font-weight: 600;
     text-transform: uppercase;
   }
-  .programming__mobile-button {
+  .show-page__mobile-button {
     background-color: #d4a843;
-    border-color: #d4a843;
   }
-  .programming__mobile-button img {
+  .show-page__mobile-button img {
     width: 15px;
     height: 15px;
     object-fit: contain;
-  }
-  .programming__grid {
-    min-height: 260px;
   }
 }
 .practical-info {
