@@ -13,51 +13,51 @@ The project follows the graphic identity of Le Phosphore, with a warm and elegan
 
 ## Technologies
 
-* HTML5
-* SASS / SCSS
-* CSS3
-* BEM methodology
-* JavaScript vanilla
-* JSON
-* Git and GitHub
-* GitHub Pages
-* VS Code
+- HTML5
+- SASS / SCSS
+- CSS3
+- BEM methodology
+- JavaScript vanilla
+- JSON
+- Git and GitHub
+- GitHub Pages
+- VS Code
 
 ## Pages
 
 The website currently contains three main pages:
 
-* Home page: `index.html`
-* Programming page: `programmation.html`
-* Practical information page: `infos-pratiques.html`
+- Home page: `index.html`
+- Programming page: `programmation.html`
+- Practical information page: `infos-pratiques.html`
 
 ## Current features
 
-* Responsive layout for desktop and mobile
-* Shared header on all pages
-* Shared hero section with stage and curtain visuals
-* Transparent navigation bar over the hero section
-* Shared information bar
-* Shared booking bar
-* Services blocks
-* Shared footer
-* Static programming page structure
-* Static practical information page structure
-* SASS architecture with separated files
-* BEM class naming convention
+- Responsive layout for desktop and mobile
+- Shared header on all pages
+- Shared hero section with stage and curtain visuals
+- Transparent navigation bar over the hero section
+- Shared information bar
+- Shared booking bar
+- Services blocks
+- Shared footer
+- Static programming page structure
+- Static practical information page structure
+- SASS architecture with separated files
+- BEM class naming convention
 
 ## Planned JavaScript features
 
 The following features will be added in the next development steps:
 
-* Mobile burger menu
-* Dynamic show cards generated from `spectacles.json`
-* Show filters by type
-* Show filters by date
-* Show filters by availability
-* Sorting options
-* Seat occupancy progress bars
-* More information toggle for show descriptions
+- Mobile burger menu
+- Dynamic show cards generated from `spectacles.json`
+- Show filters by type
+- Show filters by date
+- Show filters by availability
+- Sorting options
+- Seat occupancy progress bars
+- More information toggle for show descriptions
 
 ## Project structure
 
@@ -103,11 +103,11 @@ DWWM-ECF1-mohammed/
 
 The SASS files are organized by responsibility:
 
-* `abstracts/`: global variables such as colors, fonts and layout values
-* `base/`: reset and global HTML styles
-* `components/`: reusable components such as header, buttons and footer
-* `layout/`: shared layout sections such as hero, info bar, booking bar and services
-* `pages/`: page-specific styles
+- `abstracts/`: global variables such as colors, fonts and layout values
+- `base/`: reset and global HTML styles
+- `components/`: reusable components such as header, buttons and footer
+- `layout/`: shared layout sections such as hero, info bar, booking bar and services
+- `pages/`: page-specific styles
 
 The main SASS file is:
 
@@ -138,8 +138,8 @@ Pure black and pure white are avoided in order to respect the project brief.
 
 The project uses two font families:
 
-* Montagu Slab for headings and important visual text
-* Montserrat for body text, navigation, buttons and readable content
+- Montagu Slab for headings and important visual text
+- Montserrat for body text, navigation, buttons and readable content
 
 ## Installation
 
@@ -214,24 +214,24 @@ The project can also be uploaded to an OVH hosting service using SFTP.
 
 The project includes accessibility-focused choices:
 
-* Semantic HTML structure
-* Descriptive page titles
-* Accessible navigation labels
-* Decorative icons hidden from screen readers
-* Responsive layout for mobile devices
-* Sufficient contrast using the official color palette
-* Clear interactive elements
+- Semantic HTML structure
+- Descriptive page titles
+- Accessible navigation labels
+- Decorative icons hidden from screen readers
+- Responsive layout for mobile devices
+- Sufficient contrast using the official color palette
+- Clear interactive elements
 
 ## Eco-design choices
 
 The project follows basic eco-design principles:
 
-* No unnecessary framework
-* No jQuery dependency
-* Lightweight HTML structure
-* Organized SASS files
-* Optimized assets planned before final deployment
-* JavaScript added only when needed
+- No unnecessary framework
+- No jQuery dependency
+- Lightweight HTML structure
+- Organized SASS files
+- Optimized assets planned before final deployment
+- JavaScript added only when needed
 
 ## Git workflow
 

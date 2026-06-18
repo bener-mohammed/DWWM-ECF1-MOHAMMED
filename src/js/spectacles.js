@@ -32,8 +32,8 @@ function cleanText(text) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replaceAll("\"", "&quot;")
+    .replaceAll("\'", "&#039;");
 }
 
 function formatDate(dateValue, timeValue) {
@@ -49,7 +49,7 @@ function formatDate(dateValue, timeValue) {
   const cleanDate = dateText.replace(".", "");
 
   return `${cleanDate} ${timeValue}`.replace(/^./, (letter) =>
-    letter.toUpperCase()
+    letter.toUpperCase(),
   );
 }
 

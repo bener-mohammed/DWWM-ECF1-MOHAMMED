@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "sass": "sass --watch src/scss:assets/css",
-  "build": "sass src/scss/main.scss assets/css/main.css --style=compressed",
-  "lint": "eslint src/js",
-  "format": "prettier --write ."
-},
+    "sass": "sass --watch src/scss:assets/css",
+    "build": "sass src/scss/main.scss assets/css/main.css --style=compressed",
+    "lint": "eslint src/js",
+    "format": "prettier --write ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
