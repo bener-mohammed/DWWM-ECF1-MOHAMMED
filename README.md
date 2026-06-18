@@ -248,6 +248,21 @@ Add static practical information page
 
 This makes the project history easier to understand and review.
 
+## Code validation
+
+The HTML pages were checked with the W3C Markup Validation Service.
+
+Validated pages:
+
+- `index.html`
+- `programmation.html`
+- `infos-pratiques.html`
+- `mentions-legales.html`
+
+The CSS file `assets/css/main.css` was checked with the W3C CSS Validation Service.
+
+The JavaScript files were checked with ESLint and no errors were reported.
+
 ## Author
 
-Project created by Mohammed as part of the DWWM 2026 ECF assessment.
+Project created by Mohammed BENERROUA as part of the DWWM 2026 ECF assessment.
